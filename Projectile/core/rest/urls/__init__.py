@@ -1,0 +1,25 @@
+from django.urls import include, path
+
+urlpatterns = [ 
+    path("additional/", include("core.rest.urls.ipaddress")),
+    path("appointment/", include("core.rest.urls.appointment")),
+    path("contact/", include("core.rest.urls.contact")),
+    path('news_events/', include("core.rest.urls.newsevents")),
+    path('logo/', include("core.rest.urls.logo")),
+    path('slider-content/', include("core.rest.urls.slider_content")),
+    path('product/', include("core.rest.urls.products")),
+    path('product/details/', include("core.rest.urls.productdetails")),
+    path("client/", include("core.rest.urls.clients")),
+    path('testimonial/', include("core.rest.urls.testimonials")),
+    path('services/', include("core.rest.urls.services")),
+    path('services/details/', include("core.rest.urls.service_details")),
+    path('about/', include("core.rest.urls.about")),
+    path('fun/', include("core.rest.urls.fun_fact_content")),
+    path('content/', include("core.rest.urls.why_choose_us")),
+    path('studies/', include("core.rest.urls.case_study")),
+    path('teams/', include("core.rest.urls.team")),
+    path('galleries/', include("core.rest.urls.gallery")),
+    path('faq/', include("core.rest.urls.faq")),
+    path('police/', include("core.rest.urls.police")),
+    path('terms/', include("core.rest.urls.terms")),
+]
